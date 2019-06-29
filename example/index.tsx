@@ -25,7 +25,19 @@ const App = () => {
     {
       data: { id: 0, email: '', first_name: '', last_name: '', avatar: '' },
     },
-    (prevState, action) => action.draft
+    (prevState, action) => {
+      if (action.type === 'FETCH_SUCCESS') {
+        console.log('test', action.draft);
+        return {
+          ...action.draft,
+          data: {
+            ...action.draft.data,
+            data: { ...action.draft.data.data, avatar: '' },
+          },
+        };
+      }
+      return action.draft;
+    }
   );
 
   const { id, email, first_name, last_name, avatar } = data;
