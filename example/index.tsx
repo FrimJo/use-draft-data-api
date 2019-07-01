@@ -1,7 +1,7 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import useDraftDataApi from '../src';
+import useDraftDataApi from 'use-draft-data-api';
 
 type Payload = {
   readonly data: Readonly<{
