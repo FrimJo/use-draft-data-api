@@ -7,9 +7,12 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
+  "alias": {
+    "react": "../node_modules/react",
+    "react-dom": "../node_modules/react-dom/profiling",
+    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
+  },
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "react-app-polyfill": "^1.0.0",
     "use-draft-data-api": "^0.1.0"
   },
