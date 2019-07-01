@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/FrimJo/use-draft-data-api"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/use-draft-data-api.esm.js",
   "typings": "dist/index.d.ts",
